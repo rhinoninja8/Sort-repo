@@ -1,0 +1,28 @@
+#list of unsorted data
+myList = [-1, 32, -1, 4, 23, -12121]
+#sort function
+def swap(pos1, pos2):
+    myList[pos1], myList[pos2] = myList[pos2], myList[pos1]
+
+
+    return
+#print the unsorted lsit
+print(myList)
+leng = len(myList) - 1
+d = 0
+while d < len(myList):
+    #the positions of the 2 numbers
+    pos1 = 0
+    pos2 = 1
+    d = d + 1
+    #while the second number is less than the length of myList
+    while pos2 < len(myList):
+        if myList[pos1] > myList[pos2]:
+            #swap the 2 numbers
+            swap(pos1, pos2)
+            print(myList)
+        pos1 = pos1 + 1
+        pos2 = pos2 + 1
+        print(myList)
+
+
